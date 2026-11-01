@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ward Zero</title>
+<meta name="description" content="A seeded simulation of a ransomware outbreak in a hospital network, and which defences actually keep the emergency department open.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="wrap">
+  <p class="eyebrow">Hospital ransomware simulator</p>
+  <h1>Ward Zero</h1>
+  <p class="lede">A seeded simulation of ransomware spreading through a hospital network, step by step, tagged with MITRE ATT&amp;CK techniques. Pick a set of defences, then scrub through the incident and watch what it costs the patients.</p>
+  <p class="note">All probabilities and timings are illustrative assumptions, listed in <a href="https://github.com/tttamannaanand/wardzero/blob/main/wardzero/assumptions.py">assumptions.py</a>. This is a model for thinking, not a prediction.</p>
+</header>
+
+<main class="wrap">
+  <section class="controls" aria-label="Scenario">
+    <div class="seg" role="radiogroup" aria-label="Defences" id="scenarios"></div>
+  </section>
+
+  <section class="headline" id="headline" aria-live="polite"></section>
+
+  <section class="grid">
+    <div class="card map-card">
+      <div class="card-head">
+        <h2>Network</h2>
+        <ul class="legend" id="legend"></ul>
+      </div>
+      <svg id="map" role="img" aria-label="Hospital network map"></svg>
+      <div class="timeline">
+        <button id="play" aria-label="Play">▶</button>
+        <div class="track">
+          <input id="time" type="range" min="0" max="30240" step="10" value="0" aria-label="Time">
+          <div id="marks" class="marks"></div>
+        </div>
+        <output id="clock">Day 1 00:00</output>
+      </div>
+    </div>
+
+    <div class="side">
+      <div class="card">
+        <h2>Clinical services</h2>
+        <ul id="services" class="services"></ul>
+      </div>
+      <div class="card">
+        <h2>Incident log</h2>
+        <ol id="log" class="log"></ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="card ranking">
+    <div class="card-head">
+      <h2>Which single defence keeps the ED open?</h2>
+      <button id="tableToggle" class="link">Show as table</button>
+    </div>
+    <p class="sub" id="rankingSub"></p>
+    <div id="bars" class="bars"></div>
+    <div id="rankTable" class="table-wrap" hidden></div>
+  </section>
+</main>
+
+<div id="tip" class="tip" role="tooltip" hidden></div>
+
+<footer class="wrap">
+  <p>Ward Zero · <a href="https://github.com/tttamannaanand/wardzero">source code and tests</a> · a fictional hospital, illustrative assumptions, no real exploit code.</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

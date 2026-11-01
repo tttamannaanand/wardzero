@@ -1,0 +1,126 @@
+{
+ "runs": 300,
+ "rows": [
+  {
+   "label": "No defences",
+   "runs": 300,
+   "detonated": 0.8833333333333333,
+   "hosts_encrypted_mean": 38.78333333333333,
+   "backups_destroyed": 0.8766666666666667,
+   "diversion_hours_mean": 285.0188888888889,
+   "diversion_hours_p90": 381.23333333333335,
+   "ehr_down_hours_mean": 74.71277777777777,
+   "domain_admin": 1.0
+  },
+  {
+   "label": "admin tiering",
+   "runs": 300,
+   "detonated": 0.7566666666666667,
+   "hosts_encrypted_mean": 8.746666666666666,
+   "backups_destroyed": 0.0,
+   "diversion_hours_mean": 15.350555555555557,
+   "diversion_hours_p90": 24.5,
+   "ehr_down_hours_mean": 0.0,
+   "domain_admin": 0.0
+  },
+  {
+   "label": "offline backups",
+   "runs": 300,
+   "detonated": 0.8833333333333333,
+   "hosts_encrypted_mean": 38.78333333333333,
+   "backups_destroyed": 0.0,
+   "diversion_hours_mean": 42.76888888888889,
+   "diversion_hours_p90": 53.333333333333336,
+   "ehr_down_hours_mean": 19.17611111111111,
+   "domain_admin": 1.0
+  },
+  {
+   "label": "soc 24x7",
+   "runs": 300,
+   "detonated": 0.92,
+   "hosts_encrypted_mean": 34.75666666666667,
+   "backups_destroyed": 0.9066666666666666,
+   "diversion_hours_mean": 236.4061111111111,
+   "diversion_hours_p90": 383.18333333333334,
+   "ehr_down_hours_mean": 71.71388888888889,
+   "domain_admin": 0.99
+  },
+  {
+   "label": "edr everywhere",
+   "runs": 300,
+   "detonated": 0.8933333333333333,
+   "hosts_encrypted_mean": 35.623333333333335,
+   "backups_destroyed": 0.8833333333333333,
+   "diversion_hours_mean": 259.9766666666667,
+   "diversion_hours_p90": 376.8333333333333,
+   "ehr_down_hours_mean": 74.72222222222223,
+   "domain_admin": 0.94
+  },
+  {
+   "label": "phishing training",
+   "runs": 300,
+   "detonated": 0.8433333333333334,
+   "hosts_encrypted_mean": 37.75666666666667,
+   "backups_destroyed": 0.84,
+   "diversion_hours_mean": 275.88722222222225,
+   "diversion_hours_p90": 381.68333333333334,
+   "ehr_down_hours_mean": 73.44,
+   "domain_admin": 0.9433333333333334
+  },
+  {
+   "label": "segmentation",
+   "runs": 300,
+   "detonated": 0.9433333333333334,
+   "hosts_encrypted_mean": 39.56666666666667,
+   "backups_destroyed": 0.8466666666666667,
+   "diversion_hours_mean": 281.5127777777778,
+   "diversion_hours_p90": 382.18333333333334,
+   "ehr_down_hours_mean": 73.0311111111111,
+   "domain_admin": 0.9933333333333333
+  },
+  {
+   "label": "patching",
+   "runs": 300,
+   "detonated": 0.89,
+   "hosts_encrypted_mean": 38.96333333333333,
+   "backups_destroyed": 0.87,
+   "diversion_hours_mean": 286.495,
+   "diversion_hours_p90": 378.84999999999997,
+   "ehr_down_hours_mean": 75.43222222222222,
+   "domain_admin": 0.9866666666666667
+  },
+  {
+   "label": "mfa",
+   "runs": 300,
+   "detonated": 0.8766666666666667,
+   "hosts_encrypted_mean": 39.55,
+   "backups_destroyed": 0.87,
+   "diversion_hours_mean": 292.4638888888889,
+   "diversion_hours_p90": 384.56666666666666,
+   "ehr_down_hours_mean": 75.49111111111111,
+   "domain_admin": 0.9666666666666667
+  },
+  {
+   "label": "canaries",
+   "runs": 300,
+   "detonated": 0.96,
+   "hosts_encrypted_mean": 41.236666666666665,
+   "backups_destroyed": 0.9533333333333334,
+   "diversion_hours_mean": 292.7344444444444,
+   "diversion_hours_p90": 392.84999999999997,
+   "ehr_down_hours_mean": 82.54555555555557,
+   "domain_admin": 0.9866666666666667
+  },
+  {
+   "label": "All defences",
+   "runs": 300,
+   "detonated": 0.0,
+   "hosts_encrypted_mean": 0.0,
+   "backups_destroyed": 0.0,
+   "diversion_hours_mean": 0.0,
+   "diversion_hours_p90": 0.0,
+   "ehr_down_hours_mean": 0.0,
+   "domain_admin": 0.0
+  }
+ ]
+}
