@@ -4,6 +4,8 @@
 
 Ward Zero models a fictional 60-host hospital: admin, ward and ED workstations, imaging modalities, infusion pumps, the EHR, a domain controller and backups. An attacker gets in by phishing or by brute-forcing an internet-facing RDP server, then steals credentials, moves sideways, destroys backups and detonates. Every step is tagged with a MITRE ATT&CK technique. Recovery is limited by a small IT team, and the cost is measured in **hours of ambulance diversion**, not in hosts.
 
+**[Open the replay page](https://tttamannaanand.github.io/wardzero/)**
+
 The replay page lets you scrub through one incident under different defences. It shows the network map, which clinical services are down, the incident log, and a ranking of each defence over 300 runs.
 
 ## Run it
